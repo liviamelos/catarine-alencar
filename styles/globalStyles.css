@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&family=Tenor+Sans&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-browndark:#5D473E;
+    --color-brownligth:#A5593C;
+    --color-mustard:#E19251;
+    --color-pinkpastel: #E9B3A3;
+    --color-pinklight:#FBD6DB;
+    --color-beige:#FFF7F5;
+    --color-greydark:#474F5A;
+    --color-grey:#747D88;
+    --color-greyA: #3C444C;
+    --button-radius: 10px;
+    --card-radius: 10px;
+}
+
+button{
+   background-color: #35B620;
+   color:white;
+   border-radius: var(--button-radius);
+   font-family: 'Inter';
+   width: 340px;
+   height: 74px;
+   border: transparent;
+   cursor: pointer;
+   font-size: 18px;
+}
+
+button:hover{
+    background-color: #35B620;
+    opacity: 0.8;
+    color: white;
+    font-family: 'Inter';
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    height: 6px;
+    border-radius: 8px;
+    background-color:var(--color-pinkpastel);
+}

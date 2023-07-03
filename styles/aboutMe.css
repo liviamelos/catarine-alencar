@@ -1,0 +1,43 @@
+.section-aboutme{
+    width: 70%;
+    height: 900px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutme-text >img{
+    margin-bottom: 30px;
+}
+.aboutme-text{
+    width: 500px;
+}
+
+.aboutme-text >h2{
+    color: var(--color-browndark);
+    font-family: 'Inter';
+    font-size: 48px;
+    padding-bottom:50px;
+    line-height: 1.2;
+}
+
+.aboutme-paraone >p{
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: normal;
+    text-align: justify;
+    color: var(--color-grey);
+    padding-bottom:30px;
+    line-height: 1.2;
+}
+
+.aboutme-paratwo >p{
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: normal;
+    text-align: justify;
+    color: var(--color-grey);
+    padding-bottom:40px;
+    line-height: 1.2;
+}

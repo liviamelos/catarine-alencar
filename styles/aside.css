@@ -1,0 +1,69 @@
+.aside-instagram{
+    width: 100%;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    background-image: url("../assets/backgroundInsta.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: right;
+}
+
+.aside-instagram >div{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.aside-img-button{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aside-cards{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    height: 350px;
+}
+
+.aside-cards ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left:20px;
+    padding-right: 50px;
+}
+
+.aside-cards li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    height: 240px;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor:pointer;
+}
+
+.aside-cards img{
+    border-radius: var(--card-radius);
+}
+
+#aside-button{
+    background-color: #51A0DC;
+}
+
+#aside-button:hover{
+    background-color: #51A0DC;
+    opacity: 0.8;
+}
