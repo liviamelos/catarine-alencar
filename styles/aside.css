@@ -67,3 +67,15 @@
     background-color: #51A0DC;
     opacity: 0.8;
 }
+
+.box-button{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.box-img{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
