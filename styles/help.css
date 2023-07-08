@@ -1,0 +1,67 @@
+/* como posso te ajudar */
+
+.section-help{
+    background-image: url("../assets/backgroundHelp.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.help-img >img{
+     width: 80%;
+}
+
+.cards-box{
+    width: 100%;
+}
+
+.cards-help {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px){
+
+    .section-help{
+        background-image: url("../assets/backgroundHelp.png");
+        background-repeat: no-repeat;
+        background-size: 90%;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    
+    .help-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .cards-help {
+        width: 73%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    
+}

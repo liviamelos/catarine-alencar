@@ -37,8 +37,7 @@ button{
 button:hover{
     background-color: #35B620;
     opacity: 0.8;
-    color: white;
-    font-family: 'Inter';
+    color: white; 
 }
 
 ::-webkit-scrollbar{
@@ -52,3 +51,15 @@ button:hover{
     border-radius: 8px;
     background-color:var(--color-pinkpastel);
 }
+
+body{
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+main{
+    margin: auto;
+}
+
+
+

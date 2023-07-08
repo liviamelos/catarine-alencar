@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/styles/flip.css">
+    <link rel="stylesheet" href="/styles/help.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <title>Catarine Alencar</title>
     <meta
@@ -44,7 +45,8 @@
   <main class="main-container">
     <section class="section-apresentation">
       <div class="apresentation-text">
-        <img src="./assets/textPrincipal.png" alt="Texto: Terapia Indivudial para adolescentes e adultos">
+        <div class="text">
+      </div>
         <span id="crp">CRP 02/26543</span>
         <p>Atendimento psicológico para adolescentes, adultos e casais</p>
         <h2>Online e Presencial*</h2>
@@ -61,7 +63,7 @@
       <div class="help-img">
         <img src="./assets/textHelp.png" alt="Texto: Como posso te ajudar?">
       </div>
-
+      <div class="cards-box">
         <ul class="cards-help">
             <li class="wrapper">
               <div class="single-card">
@@ -152,10 +154,12 @@
               </div>
               </div>
             </li>
-        </ul>   
+        </ul>  
+      </div> 
     </section>
 
     <section class="section-aboutme" id="sobre">
+      <div class="aboutme-box">
       <div class="aboutme-img">
         <img src="./assets/fotoCatarine2.svg" alt="Texto: Sobre mim">
       </div>
@@ -170,13 +174,14 @@
        </div>
         <a href="https://wa.me/5581991395137" target="_blank"><button>AGENDAR CONSULTA</button></a>
       </div>
+    </div>
     </section>
 
     <aside class="aside-instagram">
       <div>
      <div class="aside-img-button">
-      <div class="box-img">
-      <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><img  src="./assets/instagram.png" alt="Perfil do instagram de Catarine"></a>
+      <div id="box-img">
+      <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="img-insta" src="./assets/instagram.png" alt="Perfil do instagram de Catarine"></a>
     </div>
     <div class="box-button">
       <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><button id="aside-button">SEGUIR NO INSTAGRAM</button></a>
@@ -197,7 +202,7 @@
       <div>
       <div class="individual-container">
       <div class="text-terapy">
-      <div>
+      <div class="text-img">
         <img src="./assets/textIndividual.png" alt="Texto: Terapia Indivudial para adolescentes e adultos">
       </div>
       <div class="individual-para">
@@ -253,7 +258,7 @@
 
     <div  class="couple-container">
       <div class="text-couple">
-        <div>
+        <div class="couple-img">
         <img src="./assets/textCasal.png" alt="Texto: Terapia de Casal">
       </div>
       <div class="casual-para">
@@ -354,6 +359,5 @@
       </div>
     </footer>
   </main>
-    <script src="/scripts/index.js"></script>
 </body>
 </html>
