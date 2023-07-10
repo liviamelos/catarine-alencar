@@ -1,0 +1,376 @@
+.section-terapy{
+    background-image: url(../assets/backgroundTerapy.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1485px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.section-terapy >div{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 30px;
+   
+}
+
+.text-terapy{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+.cards-individual{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: HIDDEN;
+    overflow-x: scroll;
+
+}
+
+.text-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-img >img{
+    width: 300px;
+}
+
+.terapy-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-couple{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+.individual-para{
+    width: 90%;
+}
+
+.individual-para >p{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+    color: var(--color-grey);
+    padding-bottom: 30px;
+    line-height: 1.2;
+}
+.cards-couple{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: HIDDEN;
+    overflow-x: scroll;
+}
+
+.terapy-cards{
+    width: 100%;
+    overflow-y: HIDDEN;
+    overflow-x: scroll;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.couple-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.couple-img >img{
+    width: 250px;
+}
+
+.casual-para{
+    width: 90%;
+}
+
+.casual-para >p{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+    color: var(--color-grey);
+    padding-bottom: 30px;
+    line-height: 1.2;
+}
+
+#button-terapy{
+    border: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.individual-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.couple-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+}
+
+
+#flash{
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    border-radius: var(--card-radius);
+
+}
+
+@keyframes flash{
+    0%{
+        background: #FFF7F5;
+    }
+    50%{
+        background: #f9edea;
+    }
+    100%{
+        background: #FFF7F5;
+    }
+}
+
+
+
+@media (min-width: 768px){
+    .section-terapy{
+        height: 1450px;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .terapy-card{
+        display: flex;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin-bottom: 40px;
+        justify-content: center;
+    } 
+    .section-terapy{
+        background-image: url("../assets/backgroundTerapy.png");
+        background-repeat: no-repeat;
+        background-size: 95%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
+    .section-terapy >div{
+        padding-top: 150px;
+        height: 1305px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+
+    .text-terapy{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px; 
+    }
+
+    .cards-individual{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+    .couple-img >img {
+        width: 300px;
+    }
+    .text-couple{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px; 
+    }
+
+    .individual-para >p{
+        font-family: 'Inter';
+        font-size: 17px;
+        font-weight: normal;
+        text-align: justify;
+        color: var(--color-grey);
+        padding-bottom:50px;
+        line-height: 1.2;
+    }
+
+    .casual-para {
+        width: 700px;
+    }
+    .cards-couple{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+    .text-img {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-img >img {
+        width: 400px;
+    }
+
+    .terapy-cards{
+        display: flex;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin-bottom: 70px;
+        justify-content: center;
+    }
+
+    .casual-para >p{
+        font-family: 'Inter';
+        font-size: 17px;
+        font-weight: normal;
+        text-align: justify;
+        color: var(--color-grey);
+        padding-bottom:50px;
+        line-height: 1.2;
+    }
+    .individual-para {
+        width: 700px;
+    }
+    #button-terapy{
+        width: 440px;
+        height: 100px;
+        border: transparent;
+        cursor: pointer;
+        font-size: 18px;
+        margin-bottom: 95px;
+    }
+
+    .individual-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .couple-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @keyframes flash{
+        0%{
+            background: #FFF7F5;
+        }
+        50%{
+            background: #FFF7F5;
+        }
+        100%{
+            background: #FFF7F5;
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .main-container {
+        gap: 50px;
+    }
+
+    .section-terapy >div {
+        padding-top: 250px;
+    }
+
+    .section-terapy {
+        margin-bottom: 70px;
+    }
+
+    .individual-para >p {
+        font-size: 18px;
+    }
+
+    .casual-para >p {
+        font-size: 18px;
+    }
+
+    .cards-individual {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cards-couple {
+        width: 95%;
+    }
+
+    #button-terapy {
+        width: 480px;
+        height: 100px;
+        font-size: 25px;
+    }
+
+    @keyframes flash{
+        0%{
+            background: #FFF7F5;
+        }
+        50%{
+            background: #FFF7F5;
+        }
+        100%{
+            background: #FFF7F5;
+        }
+    }
+}
+
+@media (min-width: 2000px){
+    .section-terapy {
+        height: 1640px;
+    }
+
+    @keyframes flash{
+        0%{
+            background: #FFF7F5;
+        }
+        50%{
+            background: #FFF7F5;
+        }
+        100%{
+            background: #FFF7F5;
+        }
+    }
+}

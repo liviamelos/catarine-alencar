@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="/styles/globalStyles.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/aboutMe.css">
-    <link rel="stylesheet" href="/styles/terapy.css">
+    <link rel="stylesheet" href="/styles/sectionAbout.css">
+    <link rel="stylesheet" href="/styles/sectionTerapy.css">
     <link rel="stylesheet" href="/styles/aside.css">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/flip.css">
-    <link rel="stylesheet" href="/styles/help.css">
+    <link rel="stylesheet" href="/styles/flipCards.css">
+    <link rel="stylesheet" href="/styles/sectionHelp.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <title>Catarine Alencar</title>
     <meta
@@ -26,7 +26,7 @@
         <!--Cabeçalho-->
         <div class="container">
             <div class="marca">
-              <a href="https://wa.me/5581991395137" target="_blank"><img src="./assets/logo.svg" alt="Logomarca Catarine Alencar"></a>
+              <a href="#home"><img class="logo-img"src="./assets/logo.png" alt="Logomarca Catarine Alencar"></a>
             </div>
 
             <div class="cabecalho">
@@ -43,17 +43,17 @@
     </header>
 
   <main class="main-container">
-    <section class="section-apresentation">
+    <section class="section-apresentation" id="home">
       <div class="apresentation-text">
-        <div class="text">
-      </div>
+        <div class="text"></div>
         <span id="crp">CRP 02/26543</span>
         <p>Atendimento psicológico para adolescentes, adultos e casais</p>
         <h2>Online e Presencial*</h2>
         <span>*Atendimento presencial em Recife - PE</span>
 
-        <a href="https://wa.me/5581991395137" target="_blank"><button>AGENDAR CONSULTA</button></a>
+        <a href="https://wa.me/5581991395137" target="_blank"><button type="button" id="apresentation-button">AGENDAR CONSULTA</button></a>
       </div>
+
       <div class="apresentation-image">
         <img src="./assets/fotoCatarine1.png" alt="Foto de Catarine">
       </div>
@@ -65,93 +65,94 @@
       </div>
       <div class="cards-box">
         <ul class="cards-help">
-            <li class="wrapper">
-              <div class="single-card">
-              <div class="front">
-                <p>SAÚDE MENTAL</p>
-              </div>
-              <div class="back">
-                <p>Ansiedade, depressão, transtornos de humor, fobias, transtornos de estresse pós-traumático, transtornos de personalidade, entre outros.</p>
-              </div>
-            </div>
-            </li>
-            <li class="wrapper">
-              <div class="single-card">
+            <li class="wrapper" id="flash">
+              <div class="single-card" >
                 <div class="front">
-                <p>RELACIONAMENTO</p>
-              </div>
-              <div class="back">
-                <p>Dificuldades de comunicação, conflitos interpessoais, problemas conjugais, dificuldades familiares, separações e divórcios.</p>
-              </div>
+                  <p>SAÚDE MENTAL</p>
+                </div>
+                <div class="back">
+                  <p>Ansiedade, depressão, transtornos de humor, fobias, transtornos de estresse pós-traumático, transtornos de personalidade, entre outros.</p>
+                </div>
               </div>
             </li>
             <li class="wrapper">
               <div class="single-card">
                 <div class="front">
-                <p>ESTRESSE E SOBRECARGA</p>
-              </div>
-              <div class="back">
-                <p>Gerenciamento do estresse, equilíbrio entre trabalho e vida pessoal, esgotamento profissional, dificuldades em lidar com mudanças e transições.</p>
-              </div>
-              </div>
-            </li>
-            <li class="wrapper">
-              <div class="single-card">
-                <div class="front">
-                <p>AUTOESTIMA E AUTOCONFIANÇA</p>
-              </div>
-              <div class="back">
-                <p>Desenvolvimento de uma imagem positiva de si mesmo, superação de inseguranças, fortalecimento da autoconfiança e autoaceitação.</p>
-              </div>
+                  <p>RELACIONAMENTO</p>
+                </div>
+                <div class="back">
+                  <p>Dificuldades de comunicação, conflitos interpessoais, problemas conjugais, dificuldades familiares, separações e divórcios.</p>
+                </div>
               </div>
             </li>
             <li class="wrapper">
               <div class="single-card">
                 <div class="front">
-                <p>LUTO E PERDAS</p>
-              </div>
-              <div class="back">
-                <p>Acompanhamento e suporte emocional após a perda de um ente querido, luto não resolvido, luto por separação/divórcio, perda de emprego, entre outras perdas significativas.</p>
-              </div>
-            </li>
-            <li class="wrapper">
-              <div class="single-card">
-                <div class="front">
-                <p>TRAUMAS E ABUSOS</p>
-              </div>
-              <div class="back">
-                <p>Traumas físicos, emocionais ou sexuais, abuso emocional ou físico, violência doméstica, bullying, entre outros.</p>
-              </div>
+                  <p>ESTRESSE E SOBRECARGA</p>
+                </div>
+                <div class="back">
+                  <p>Gerenciamento do estresse, equilíbrio entre trabalho e vida pessoal, esgotamento profissional, dificuldades em lidar com mudanças e transições.</p>
+                </div>
               </div>
             </li>
             <li class="wrapper">
               <div class="single-card">
                 <div class="front">
-                <p>DESENVOLVIMENTO PESSOAL</p>
-              </div>
-              <div class="back">
-                <p>Exploração de identidade, busca de propósito e significado, crescimento pessoal, tomada de decisões, transições de vida.</p>
-              </div>
-              </div>
-            </li>
-            <li class="wrapper">
-              <div class="single-card">
-                <div class="front">
-                <p>HÁBITOS E VÍCIOS</p>
-              </div>
-              <div class="back">
-                <p>Dependências químicas (álcool, drogas), comportamentos compulsivos (jogo, compras), vícios tecnológicos (internet, redes sociais).</p>
-              </div>
+                  <p>AUTOESTIMA E AUTOCONFIANÇA</p>
+                </div>
+                <div class="back">
+                  <p>Desenvolvimento de uma imagem positiva de si mesmo, superação de inseguranças, fortalecimento da autoconfiança e autoaceitação.</p>
+                </div>
               </div>
             </li>
             <li class="wrapper">
               <div class="single-card">
                 <div class="front">
-                <p>QUESTÕES DE GÊNERO E ORIENTAÇÃO SEXUAL</p>
+                  <p>LUTO E PERDAS</p>
+                </div>
+                <div class="back">
+                  <p>Acompanhamento e suporte emocional após a perda de um ente querido, luto não resolvido, luto por separação/divórcio, perda de emprego, entre outras perdas significativas.</p>
+                </div>
               </div>
-              <div class="back">
-                <p>Apoio para indivíduos que estão explorando sua identidade de gênero, enfrentando discriminação ou lidando com o processo de assumir socialmente sua sexualidade.</p>
+            </li>
+            <li class="wrapper">
+              <div class="single-card">
+                <div class="front">
+                  <p>TRAUMAS E ABUSOS</p>
+                </div>
+                <div class="back">
+                  <p>Traumas físicos, emocionais ou sexuais, abuso emocional ou físico, violência doméstica, bullying, entre outros.</p>
+                </div>
               </div>
+            </li>
+            <li class="wrapper">
+              <div class="single-card">
+                <div class="front">
+                  <p>DESENVOLVIMENTO PESSOAL</p>
+                </div>
+                <div class="back">
+                  <p>Exploração de identidade, busca de propósito e significado, crescimento pessoal, tomada de decisões, transições de vida.</p>
+                </div>
+              </div>
+            </li>
+            <li class="wrapper">
+              <div class="single-card">
+                <div class="front">
+                  <p>HÁBITOS E VÍCIOS</p>
+                </div>
+                <div class="back">
+                  <p>Dependências químicas (álcool, drogas), comportamentos compulsivos (jogo, compras), vícios tecnológicos (internet, redes sociais).</p>
+                </div>
+              </div>
+            </li>
+            <li class="wrapper">
+              <div class="single-card">
+                <div class="front">
+                  <p>QUESTÕES DE GÊNERO E ORIENTAÇÃO SEXUAL</p>
+                </div>
+                <div class="back">
+                  <p>Apoio para indivíduos que estão explorando sua identidade de gênero, enfrentando discriminação ou lidando com o processo de assumir socialmente sua sexualidade.</p>
+                </div>
               </div>
             </li>
         </ul>  
@@ -160,9 +161,9 @@
 
     <section class="section-aboutme" id="sobre">
       <div class="aboutme-box">
-      <div class="aboutme-img">
-        <img src="./assets/fotoCatarine2.svg" alt="Texto: Sobre mim">
-      </div>
+        <div class="aboutme-img">
+          <img src="./assets/fotoCatarine2.svg" alt="Texto: Sobre mim">
+        </div>
 
       <div class="aboutme-text">
         <img src="./assets/textAboutme.png" alt="Foto de Catarine">
@@ -172,30 +173,30 @@
         <div class="aboutme-paratwo">
           <p>Sou apaixonada pela atuação clínica e meus atendimentos são guiados pelo acolhimento, escuta e intervenção qualificada, para aqueles que buscam autoconhecimento, alívio de sofrimentos ou a manutenção de uma boa saúde mental. No contexto terapêutico, vejo o paciente como protagonista de seu próprio progresso e cada processo é individual e único, respeitando sempre o tempo e as possibilidades de cada indivíduo.</p>
        </div>
-        <a href="https://wa.me/5581991395137" target="_blank"><button>AGENDAR CONSULTA</button></a>
+        <a href="https://wa.me/5581991395137" target="_blank"><button type="button" >AGENDAR CONSULTA</button></a>
       </div>
     </div>
     </section>
 
     <aside class="aside-instagram">
       <div>
-     <div class="aside-img-button">
-      <div id="box-img">
-      <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="img-insta" src="./assets/instagram.png" alt="Perfil do instagram de Catarine"></a>
-    </div>
-    <div class="box-button">
-      <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><button id="aside-button">SEGUIR NO INSTAGRAM</button></a>
-    </div>
-    </div>
-    <div class="aside-cards">
-      <ul>
-        <li> <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><img  src="./assets/instagram1.png" alt=""></a></li>
-        <li> <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><img  src="./assets/instagram2.png" alt=""></a></li>
-        <li> <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank">
-        <img  src="./assets/instagram3.png" alt=""></a></li>
-      </ul>
-    </div>
-  </div>
+        <div class="aside-img-button">
+          <div id="box-img">
+            <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="img-insta" src="./assets/instagram.png" alt="Perfil do instagram de Catarine"></a>
+          </div>
+          <div class="box-button">
+            <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><button type="button" id="aside-button">SEGUIR NO INSTAGRAM</button></a>
+          </div>
+        </div>
+        <div class="aside-cards">
+          <ul>
+            <li> <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><img  src="./assets/instagram1.png" alt=""></a></li>
+            <li> <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank"><img  src="./assets/instagram2.png" alt=""></a></li>
+            <li> <a href="https://instagram.com/psi.catarinealencar?igshid=MzRlODBiNWFlZA==" target="_blank">
+            <img  src="./assets/instagram3.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
     </aside>
 
     <section class="section-terapy" id="terapia">
@@ -212,7 +213,7 @@
 
       <div class="terapy-card">
         <ul class="cards-individual">
-          <li class="wrapper">
+          <li class="wrapper" id="flash">
             <div class="single-card">
               <div class="front">
                 <p>AUTOCONHECIMENTO E HABILIDADES DE ENFRENTAMENTO</p>
@@ -267,7 +268,7 @@
       </div>
         <div class="terapy-cards">
         <ul class="cards-couple">
-          <li class="wrapper">
+          <li class="wrapper" id="flash">
             <div class="single-card">
               <div class="front">
                 <p>COMUNICAÇÃO MELHORADA</p>
@@ -316,9 +317,12 @@
         </ul>
       </div>
     </div>
-      <div id="button-terapy">
-        <a href="https://wa.me/5581991395137" target="_blank"><button id="button-terapy">AGENDAR CONSULTA</button></a>
       </div>
+    </section>
+
+    <section>
+      <div id="button-terapy">
+        <a href="https://wa.me/5581991395137" target="_blank"><button type="button" id="button-terapy">AGENDAR CONSULTA</button></a>
       </div>
     </section>
 
@@ -329,20 +333,22 @@
         <h1>CATARINE ALENCAR</h1>
         <span>Quer agendar uma consulta? Entre em contato!</span>
       </div>
+      <div class="box-contact">
         <ul class="list-contact">
-            <li>
+            <li class="li-contact">
               <img src="./assets/iconInsta.png" alt="Icone do Instagram">
               <p>psi.catarinealencar</p>
             </li>
-            <li>
+            <li class="li-contact">
               <img src="./assets/iconWpp.png" alt="Icone do WhatsApp">
               <p>+55 81 99139-5137</p>
             </li>
-            <li>
+            <li class="li-contact">
               <img src="./assets/iconEmail.png" alt="Icone do Instagram">
               <p>psi.catarinealencar@gmail.com</p>
               </li>
         </ul>
+      </div>
         <div class="footer-addres">
         <span>Rua das Pernambucanas, 407, sala 1305 (Edf. Kronos), Graças, Recife - Pernambuco, Brasil
         </span>

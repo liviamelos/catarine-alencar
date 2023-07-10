@@ -27,11 +27,12 @@ button{
    color:white;
    border-radius: var(--button-radius);
    font-family: 'Inter';
-   width: 340px;
+   width: 320px;
    height: 74px;
    border: transparent;
    cursor: pointer;
    font-size: 18px;
+   margin-top:20px;
 }
 
 button:hover{

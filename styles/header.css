@@ -16,12 +16,16 @@
     align-items: center;
 }
 
+.logo-img{
+    width: 320px;
+}
+
 .marca{
-    width: 100%;
     padding-top: 20px;
     display: flex;
     justify-content: center;
 }
+
 
 .cabecalho{
     display: flex;
@@ -50,66 +54,46 @@
     color: var(--color-browndark)
 }
 
-@media (min-width: 768px){
-
-.header_container{
-        justify-content: center;
+@media (min-width: 1024px){
+    .container{
+        width: 90vw;
         display: flex;
-        align-items: center;  
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
-.container{
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    .marca{
+        display: flex;
+        align-content: flex-start;
+        align-items: center;
+        height: 100px;
+        width: 400px;
+        padding-top: 20px;
+        }
+
+    .cabecalho{
+        display: inline-block;  
     }
 
-.marca{
-    display: flex;
-    align-content: flex-start;
-    align-items: center;
-    height: 100px;
+    .categorias a{
+        color: var(--color-browndark);
+        list-style: none;
+        cursor: pointer;
+        font-family: 'Inter';
     }
 
-.marca > img{
-    width: 300px;
+    .categorias a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--color-pinkpastel);
     }
 
-
-.container{
-    display: flex;
-}
-
-.marca{
-    width: 400px;
-    padding-top: 20px;
-    display: inline-block;
-}
-
-.cabecalho{
-    display: inline-block;  
-}
-
-.categorias a{
-    color: var(--color-browndark);
-    list-style: none;
-    cursor: pointer;
-    font-family: 'Inter';
-}
-
-.categorias a:hover{
-  text-decoration: underline;
-  font-weight: bold;
-  color: var(--color-pinkpastel);
-}
-
-.categorias li{
-    margin-left: 30px;
-    display: inline-block;
-    list-style: none;
-    font-size: 17px;
-    color: var(--color-browndark)
-}
+    .categorias li{
+        margin-left: 30px;
+        display: inline-block;
+        list-style: none;
+        font-size: 17px;
+        color: var(--color-browndark)
+    }
 }
