@@ -138,29 +138,6 @@
     padding-top: 50px;
 }
 
-
-#flash{
-    animation-name: flash;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    border-radius: var(--card-radius);
-
-}
-
-@keyframes flash{
-    0%{
-        background: #FFF7F5;
-    }
-    50%{
-        background: #f9edea;
-    }
-    100%{
-        background: #FFF7F5;
-    }
-}
-
-
-
 @media (min-width: 768px){
     .section-terapy{
         height: 1450px;
@@ -293,19 +270,6 @@
         flex-direction: column;
     }
 
-    @keyframes flash{
-        0%{
-            background: #FFF7F5;
-        }
-        50%{
-            background: #FFF7F5;
-        }
-        100%{
-            background: #FFF7F5;
-        }
-    }
-}
-
 @media (min-width: 1440px){
     .main-container {
         gap: 50px;
@@ -345,16 +309,18 @@
     }
 
     @keyframes flash{
-        0%{
-            background: #FFF7F5;
+        from{
+            filter: drop-shadow(0 0 0 var(--color-white))
         }
-        50%{
-            background: #FFF7F5;
-        }
-        100%{
-            background: #FFF7F5;
+        to{
+            filter: drop-shadow(0 0 7px var(--color-white))
         }
     }
+    
+    #flash{
+        animation: flash 0s alternate infinite ease-in-out
+    }
+
 }
 
 @media (min-width: 2000px){
@@ -363,14 +329,16 @@
     }
 
     @keyframes flash{
-        0%{
-            background: #FFF7F5;
+        from{
+            filter: drop-shadow(0 0 0 var(--color-white))
         }
-        50%{
-            background: #FFF7F5;
-        }
-        100%{
-            background: #FFF7F5;
+        to{
+            filter: drop-shadow(0 0 7px var(--color-white))
         }
     }
+    
+    #flash{
+        animation: flash 0s alternate infinite ease-in-out
+    }
+}
 }

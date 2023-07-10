@@ -16,8 +16,10 @@
     --color-pinklight:#FBD6DB;
     --color-beige:#FFF7F5;
     --color-greydark:#474F5A;
-    --color-grey:#747D88;
+    --color-grey:#a6abb0;
+    --color-greylight:#c9cdd1;
     --color-greyA: #3C444C;
+    --color-white: #ffffff
     --button-radius: 10px;
     --card-radius: 10px;
 }

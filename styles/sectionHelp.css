@@ -31,27 +31,18 @@
     overflow-x: scroll;
 }
 
+@keyframes flash{
+    from{
+        -webkit-filter: drop-shadow(0 0 0 var(--color-white))
+    }
+    to{
+        -webkit-filter: drop-shadow(0 0 7px var(--color-greylight))
+    }
+}
 
 #flash{
-    animation-name: flash;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    border-radius: var(--card-radius);
-
+    -webkit-animation: flash 1s alternate infinite ease-in-out
 }
-
-@keyframes flash{
-    0%{
-        background: #FFF7F5;
-    }
-    50%{
-        background: #f9edea;
-    }
-    100%{
-        background: #FFF7F5;
-    }
-}
-
 
 @media (min-width:1024px){
     .section-help{
@@ -84,34 +75,35 @@
         flex-direction: row;
         overflow-x: scroll;
     } 
-    
+
     @keyframes flash{
-        0%{
-            background: #FFF7F5;
+        from{
+            filter: drop-shadow(0 0 0 var(--color-white))
         }
-        50%{
-            background: #FFF7F5;
-        }
-        100%{
-            background: #FFF7F5;
+        to{
+            filter: drop-shadow(0 0 7px var(--color-white))
         }
     }
     
+    #flash{
+        animation: flash 0s alternate infinite ease-in-out
+    }
 }
 @media (min-width: 2560px){
     .section-help {
         height: 931px;
     }
-
+    
     @keyframes flash{
-        0%{
-            background: #FFF7F5;
+        from{
+            filter: drop-shadow(0 0 0 var(--color-white))
         }
-        50%{
-            background: #FFF7F5;
+        to{
+            filter: drop-shadow(0 0 7px var(--color-white))
         }
-        100%{
-            background: #FFF7F5;
-        }
+    }
+    
+    #flash{
+        animation: flash 0s alternate infinite ease-in-out
     }
 }
